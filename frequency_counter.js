@@ -49,8 +49,8 @@ function same(arr1, arr2){
         }
     }
 
-    /* console.log(obj1);
-    console.log(obj2); */
+    console.log(obj1);
+    console.log(obj2);
 
 
     for (const num in obj1){//for the keys in obj1 check if the same keys are in obj2
