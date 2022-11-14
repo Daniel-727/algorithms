@@ -61,5 +61,19 @@ console.log(result); */
 /*---------------------------------------------*/
 
 function countUniqueValues(array){
-
+    if(array.length === 0){ //if there are no items in the array
+        return 0;
+    }
+    let i = 0;
+    for (let j = 1; j < array.length; j++){
+        if (array[i] !== array[j]){
+            i++;
+            array[i] = array[j]; //we move i over one index and move whatever new value that was at j over to the new i index
+        }
+    }
+    return i + 1; //this should be how many unique values we have when we've finished the loop
 }
+
+let result = countUniqueValues([]);
+
+console.log(result);
