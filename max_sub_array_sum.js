@@ -34,8 +34,8 @@
 
 
 
-/*---O(n) solution     ---*/
-/*------------------------*/
+/*---O(n) solution sliding window---*/
+/*----------------------------------*/
 
 function max_sub_array_sum(array,n){ //assuming we are passed in a sorted array
 
